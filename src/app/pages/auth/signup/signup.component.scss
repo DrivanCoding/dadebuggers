@@ -1,0 +1,62 @@
+@use '@angular/material' as mat;
+
+.container {
+    background-color: mat.get-color-from-palette(mat.$indigo-palette, 400);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    .signup {
+        background-color: white;
+        width: 500px;
+        padding: 50px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            .signup_form_header {
+                margin-bottom: 50px;
+
+                h3 {
+                    color: mat.get-color-from-palette(mat.$indigo-palette, 400);
+                }
+            }
+
+            mat-form-field {
+                border-radius: 25px;
+
+                mat-icon {
+                    color: mat.get-color-from-palette(mat.$indigo-palette, 500);
+                }
+            }
+
+            .signup_form_secondaryactions {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .signup_form_footer {
+                button {
+                    width: 100%;
+                    margin-top: 50px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+        .signup_form_externalactions {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            column-gap: 25px;
+
+            a {
+                text-decoration: none;
+                color: mat.get-color-from-palette(mat.$indigo-palette, 500);
+            }
+        }
+    }
+}

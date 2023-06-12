@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="signin">
+        <form [formGroup]="signinForm">
+            <div class="signin_form_header">
+                <h3 class="mat-headline-5">Bienvenu</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit quos non sapiente dolor in unde
+                    illum
+                    ducimus.</p>
+            </div>
+            <mat-form-field appearance="outline">
+                <input type="text" name="" matInput placeholder="email" formControlName="email">
+                <mat-icon matPrefix>person</mat-icon>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <input type="password" name="" matInput placeholder="mot de passe" formControlName="password">
+                <mat-icon matPrefix>visibility</mat-icon>
+            </mat-form-field>
+
+            <div class="signin_form_secondaryactions">
+                <mat-checkbox [checked]="true" formControlName="rememberMe" color="primary">Se souvenir de
+                    moi</mat-checkbox>
+                <button mat-button>mot de passe oublié</button>
+            </div>
+
+            <div class="signin_form_footer">
+                <button mat-flat-button color="primary" (click)="signIn()">Signin</button>
+            </div>
+        </form>
+        <div class="signin_form_externalactions">
+            <p>Nouveau sur notre plateforme?</p>
+            <a [routerLink]="['/signup']">M'inscrire</a>
+        </div>
+    </div>
+</div>

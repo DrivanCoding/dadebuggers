@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="signup">
+        <form [formGroup]="signupForm">
+            <div class="signup_form_header">
+                <h3 class="mat-headline-5">Rejoins-nous</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione odit quos non sapiente dolor in unde
+                    illum
+                    ducimus.</p>
+            </div>
+            <mat-form-field appearance="outline">
+                <input type="text" name="" matInput placeholder="email" formControlName="email">
+                <mat-icon matPrefix>person</mat-icon>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <input type="password" name="" matInput placeholder="mot de passe" formControlName="password">
+                <mat-icon matPrefix>visibility</mat-icon>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <input type="password" name="" matInput placeholder="Confirmer mot de passe"
+                    formControlName="confirmPassword">
+                <mat-icon matPrefix>visibility</mat-icon>
+                <mat-hint *ngIf="signupForm.errors?.['mismatch']">Mots de passe non identiques</mat-hint>
+            </mat-form-field>
+            <br>
+            <div class="signup_form_secondaryactions">
+                <mat-checkbox color="primary">Accepter les termes et conditions</mat-checkbox>
+            </div>
+
+            <div class="signup_form_footer">
+                <button mat-flat-button color="primary" (click)="signup()">S'inscrire</button>
+            </div>
+            <div class="signup_form_externalactions">
+                <p>Déjà inscrit?</p>
+                <a [routerLink]="['/signin']">Me connecter</a>
+            </div>
+        </form>
+    </div>
+</div>
