@@ -1,0 +1,30 @@
+.navbar {
+    line-height: 5rem;
+    background-color: white;
+
+    .links {
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 25px;
+
+        button {
+            //color: white !important;
+
+        }
+
+        img {
+            width: 150px;
+        }
+
+        .links-landing {
+            display: flex;
+        }
+
+        .links-ctas {
+            display: flex;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+<div class="navbar">
+    <ul class="links">
+        <img src="../../../../assets/images/logo.png" alt="">
+        <div class="links-landing">
+            <li>
+                <button mat-button>A propos de nous</button>
+            </li>
+            <li>
+                <button mat-button>Notre mission</button>
+            </li>
+            <li>
+                <button mat-button>Nous contacter</button>
+            </li>
+        </div>
+        <div class="links-ctas">
+            <li>
+                <button mat-button [routerLink]="['/signup']">S'inscrire</button>
+            </li>
+            <li>
+                <button mat-flat-button color="primary" [routerLink]="['/signin']">Se connecter</button>
+            </li>
+        </div>
+    </ul>
+</div>

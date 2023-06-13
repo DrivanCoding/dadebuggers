@@ -11,19 +11,25 @@ import { SigninComponent } from './pages/auth/signin/signin.component';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { HttpClientModule } from '@angular/common/http';
 import { environment } from 'src/environments/environment.development';
+import { PublicNavbarComponent } from './components/shared/public-navbar/public-navbar.component';
+import { LandingComponent } from './pages/landing/landing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
-    SigninComponent
+    SigninComponent,
+    PublicNavbarComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     ...ANGULAR_MATERIAL_MODULES,
     AngularFireModule.initializeApp(environment.firebase),
   ],

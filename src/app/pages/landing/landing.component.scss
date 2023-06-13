@@ -1,0 +1,196 @@
+.landing {
+    background-image: url('../../../assets/images/hero/main.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .hero {
+        background-color: rgba(34, 47, 62, .85);
+
+
+        .hero-content {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            padding: 50px;
+
+            .hero-content-description {
+                width: 100%;
+
+                p {
+                    max-width: 100%;
+                    margin-bottom: 30px;
+                }
+
+                .hero-headline {
+                    margin-bottom: 25px;
+                }
+
+                button {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .hero-content-images {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                position: relative;
+
+                img#main {
+                    max-width: 250px;
+                    display: none;
+                }
+
+                .code {
+                    background: rgba(255, 255, 255, 0.25);
+                    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                    backdrop-filter: blur(4px);
+                    -webkit-backdrop-filter: blur(4px);
+                    border-radius: 10px;
+                    border: 1px solid rgba(255, 255, 255, 0.18);
+                    position: absolute;
+                    width: 350px;
+                    height: 250px;
+                    display: none;
+                }
+
+                #code-2 {
+                    top: 20%;
+                    left: 30%;
+                }
+
+                #code-3 {
+                    top: 40%;
+                    left: 35%;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    background-color: #222f3e;
+    color: white;
+    padding-bottom: 50px;
+
+    ul {
+        list-style-type: none;
+        line-height: 35px;
+
+        li {
+            display: flex;
+            column-gap: 15px;
+
+            a {
+                text-decoration: none;
+                color: silver;
+
+                img {
+                    width: 35px;
+                }
+            }
+        }
+    }
+
+    img {
+        width: 150px;
+    }
+}
+
+.partners {
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+
+    .partners-headline {
+        margin-bottom: 25px;
+    }
+
+    .partners-brands {
+        display: grid;
+        gap: 50px;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+
+        img {
+            width: 120px;
+            opacity: .25;
+        }
+    }
+}
+
+.statistics {
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+    background-color: #6c5ce7;
+    color: white;
+    padding: 35px;
+
+    div {
+        display: flex;
+        align-items: flex-end;
+        column-gap: 10px;
+
+        h3 {
+            margin: 0;
+        }
+    }
+}
+
+.our-mission {
+    background-color: #f5f6fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    padding: 50px;
+
+    .headline {
+        margin-bottom: 10px;
+        background-image: linear-gradient(90deg, #e67399, #f2a640);
+        background-position: bottom;
+        background-size: 100% 30%;
+        background-repeat: no-repeat;
+    }
+}
+
+.missions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-items: center;
+    //color: white;
+
+    div {
+        width: 400px;
+        padding: 25px; //margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        column-gap: 10px;
+        row-gap: 5px;
+        background-color: white;
+
+        button {
+            margin-top: auto;
+        }
+
+        img {
+            width: 50px;
+        }
+    }
+}

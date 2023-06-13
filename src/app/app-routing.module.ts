@@ -5,7 +5,7 @@ import { pages } from './pages';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'signin',
+    redirectTo: 'landing',
     pathMatch: 'full'
   }, {
     path: 'signin',
@@ -13,6 +13,9 @@ const routes: Routes = [
   }, {
     path: 'signup',
     component: pages['signup']
+  }, {
+    path: 'landing',
+    component: pages['landing']
   }
 ];
 
